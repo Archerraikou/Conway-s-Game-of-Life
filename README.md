@@ -1,5 +1,6 @@
 # Conway's Game of Life
 A simulation of Conway's Game of Life in Assembly Intel x86
+
 Conway's Game of Life is a two-dimensional zero-player game invented by mathematician JohnHorton Conway in 1970. The purpose of this game is to observe the evolution of a cell system,starting from an initial configuration, introducing rules regarding death, respectively the creation of onenew cells in the system. This evolutionary system is Turing-complete. The state of a system is described by the cumulative state of the component cells, and for these we have the following rules:
 
 1. Underpopulation. Each cell (that is alive in the current generation) with less than twoneighbors in life, dies in the next generation.
