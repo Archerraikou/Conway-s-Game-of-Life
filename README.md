@@ -2,11 +2,11 @@
 A simulation of Conway's Game of Life in Assembly Intel x86
 Conway's Game of Life is a two-dimensional zero-player game invented by mathematician JohnHorton Conway in 1970. The purpose of this game is to observe the evolution of a cell system,starting from an initial configuration, introducing rules regarding death, respectively the creation of onenew cells in the system. This evolutionary system is Turing-complete. The state of a system is described by the cumulative state of the component cells, and for these we have the following rules:
 
-    Underpopulation. Each cell (that is alive in the current generation) with less than twoneighbors in life, dies in the next generation.
-    Continuity of living cells. Each cell (which is alive in the current generation), with two or three neighbors in life, will exist in the next generation.
-    Ultrapopular. Each cell (which is alive in the current generation), which has more than three neighbors alive, dies in the next generation.
-    Creation. A dead cell that has exactly three living neighbors will be created in the next generation.
-    Dead cell continuity. Any other dead cell, which does not fit into the rule of creation, a dead cell remains.
+1. Underpopulation. Each cell (that is alive in the current generation) with less than twoneighbors in life, dies in the next generation.
+2. Continuity of living cells. Each cell (which is alive in the current generation), with two or three neighbors in life, will exist in the next generation.
+3. Ultrapopular. Each cell (which is alive in the current generation), which has more than three neighbors alive, dies in the next generation.
+4. Creation. A dead cell that has exactly three living neighbors will be created in the next generation.
+5. Dead cell continuity. Any other dead cell, which does not fit into the rule of creation, a dead cell remains.
 
 We define the state of a system at generation n as a matrix Sn ∈ Mm×n({0, 1}) (m - the number oflines, respectively n - the number of columns), where element 0 represents a dead cell, respectively 1 represents a living cell (in the current generation). We define a k-evolution (k ≥ 0) of the system an iteration S0 → S1 → · · · → Sk, where each Si+1 get from Si, applying the five rules stated above.
 
